@@ -1,0 +1,196 @@
+@use '../../styles/variables' as *;
+
+.rsvp-section {
+  position: relative;
+  background-color: #faf6f0;
+  background-image: 
+    radial-gradient(circle at 15% 20%, rgba(223, 194, 141, 0.15) 0%, transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(108, 44, 62, 0.08) 0%, transparent 45%);
+  overflow: hidden;
+  padding: 5rem 0;
+}
+
+.rsvp-ambient-glow {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(197, 160, 89, 0.12) 0%, transparent 70%);
+  filter: blur(50px);
+  pointer-events: none;
+}
+
+.rsvp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.rsvp-header-center {
+  text-align: center;
+  max-width: 650px;
+  margin-bottom: 2.75rem;
+
+  .section-label {
+    font-family: $font-sans;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: $color-gold-deep;
+    display: block;
+    margin-bottom: 0.45rem;
+  }
+
+  .section-title {
+    font-family: $font-cinzel;
+    font-size: clamp(1.9rem, 4.5vw, 2.75rem);
+    font-weight: 600;
+    color: $color-wine-rich;
+    letter-spacing: 0.04em;
+    line-height: 1.25;
+  }
+
+  .section-subtitle {
+    font-family: $font-cormorant;
+    font-size: clamp(1.1rem, 2vw, 1.35rem);
+    color: $color-text-secondary;
+    line-height: 1.5;
+  }
+}
+
+.rsvp-card-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 580px;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid rgba(197, 160, 89, 0.4);
+  box-shadow: 0 12px 36px rgba(45, 23, 19, 0.08), 0 2px 6px rgba(197, 160, 89, 0.15);
+  padding: 2.75rem 2.25rem;
+  text-align: center;
+
+  @media (max-width: $bp-mobile) {
+    padding: 2rem 1.25rem;
+  }
+
+  .rsvp-lead-note {
+    font-family: $font-cormorant;
+    font-size: 1.25rem;
+    color: $color-wine-rich;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-weight: 500;
+  }
+}
+
+.rsvp-contact-card {
+  background: linear-gradient(135deg, rgba(253, 250, 245, 0.95) 0%, rgba(248, 242, 232, 0.95) 100%);
+  border: 1px solid rgba(197, 160, 89, 0.35);
+  border-radius: 14px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+
+  .contact-avatar-badge {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, $color-wine-rich 0%, #3e151d 100%);
+    border: 1.5px solid $color-gold;
+    color: $color-gold-light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0.95rem;
+    box-shadow: 0 4px 12px rgba(88, 28, 37, 0.25);
+  }
+
+  .contact-info {
+    margin-bottom: 1.6rem;
+
+    .contact-relation {
+      font-family: $font-sans;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: $color-gold-deep;
+      display: inline-block;
+      background: rgba(197, 160, 89, 0.15);
+      padding: 0.25rem 0.85rem;
+      border-radius: 999px;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-name {
+      font-family: $font-cinzel;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $color-wine-rich;
+      letter-spacing: 0.03em;
+      margin-bottom: 0.35rem;
+    }
+
+    .contact-phone-display {
+      font-family: $font-sans;
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: #3b2820;
+      letter-spacing: 0.06em;
+    }
+  }
+
+  .contact-actions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    @media (max-width: 440px) {
+      grid-template-columns: 1fr;
+    }
+
+    .btn-rsvp-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      padding: 0.85rem 1.25rem;
+      border-radius: 8px;
+      font-family: $font-sans;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      cursor: pointer;
+
+      &.btn-call {
+        background: #ffffff;
+        color: $color-wine-rich;
+        border: 1px solid rgba(88, 28, 37, 0.25);
+
+        &:hover {
+          background: rgba(88, 28, 37, 0.06);
+          border-color: $color-wine-rich;
+          transform: translateY(-2px);
+        }
+      }
+
+      &.btn-whatsapp {
+        background: #25D366;
+        color: #ffffff;
+        border: 1px solid #20BA5A;
+
+        &:hover {
+          background: #20BA5A;
+          box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+}
