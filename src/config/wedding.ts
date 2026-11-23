@@ -240,14 +240,6 @@ export const weddingConfig: WeddingConfig = {
 
   gallery: [
     {
-      id: "g1",
-      title: "Eternal Moments",
-      aspect: "portrait",
-      src: "assets/images/gallery/gallery-1.jpg",
-      // caption: "Framed in the serene evening warmth of the royal courtyard."
-      caption: ""
-    },
-    {
       id: "g2",
       // title: "Quiet Radiance",
        title: "Eternal Moments",
@@ -257,18 +249,44 @@ export const weddingConfig: WeddingConfig = {
       caption: ""
     },
     {
+      id: "g8",
+      // title: "The Serenade",
+      title: "Eternal Moments",
+      aspect: "portrait",
+      src: "assets/images/gallery/gallery-8.jpg",
+      // caption: "Melodies that echo through the corridors of memory."
+      caption: ""
+    },
+    {
       id: "g3",
       // title: "The Regal Sanctum",
-       title: "Eternal Moments",
+      title: "Eternal Moments",
       aspect: "portrait",
       src: "assets/images/gallery/gallery-3.jpg",
       // caption: "The majestic arched colonnades that will bear witness to our vows."
       caption: ""
     },
     {
+      id: "g9",
+      // title: "The Serenade",
+      title: "Eternal Moments",
+      aspect: "portrait",
+      src: "assets/images/gallery/gallery-9.jpg",
+      // caption: "Melodies that echo through the corridors of memory."
+      caption: ""
+    },
+    {
+      id: "g1",
+      title: "Eternal Moments",
+      aspect: "portrait",
+      src: "assets/images/gallery/gallery-1.jpg",
+      // caption: "Framed in the serene evening warmth of the royal courtyard."
+      caption: ""
+    },
+    {
       id: "g4",
       // title: "Sacred Intricacies",
-       title: "Eternal Moments",
+      title: "Eternal Moments",
       aspect: "portrait",
       src: "assets/images/gallery/gallery-4.jpg",
       // caption: "The delicate touch of henna carrying ancient blessings of love."
@@ -290,24 +308,6 @@ export const weddingConfig: WeddingConfig = {
       aspect: "portrait",
       src: "assets/images/gallery/gallery-7.jpg",
       // caption: "A shower of fragrant marigold and rose petals blessing the couple."
-      caption: ""
-    },
-    {
-      id: "g8",
-      // title: "The Serenade",
-       title: "Eternal Moments",
-      aspect: "portrait",
-      src: "assets/images/gallery/gallery-8.jpg",
-      // caption: "Melodies that echo through the corridors of memory."
-      caption: ""
-    },
-    {
-      id: "g9",
-      // title: "The Serenade",
-       title: "Eternal Moments",
-      aspect: "portrait",
-      src: "assets/images/gallery/gallery-9.jpg",
-      // caption: "Melodies that echo through the corridors of memory."
       caption: ""
     },
     {
